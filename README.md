@@ -1,7 +1,7 @@
 ## Getting started
-- Create new directory : `mkdir spinning-donut`
+- Create new directory : `mkdir donut`
 - Rename directory : `mv old-name new-name`
-- Move into new folder : `cd spinning-donut`
+- Move into new folder : `cd donut`
 - Check folder's directory : `pwd`
 - Create readme file : `touch README.md`
 - Delete file : `rm README.md`
@@ -26,3 +26,13 @@ int main(void)
 ## Compile & run a c program
 - `clang donut.c` & `./a.out`
 - `clang donut.c -o output` & `./output`
+## Vim
+- Jump to start of line : `0`
+- Jump to end of line : `$` (OPTION + 4)
+- Jump to next word : `w`
+- Jump to previous word : `b`
+- Jump to next ocurrence of word : `*`
+- Jump to previous ocurrence of word : `#`
+- Copy line : `yy`
+- Cut line : `dd`
+- Paste line : `p`
