@@ -100,6 +100,8 @@ int main(void)
 ## Compile & run a C program
 - `clang donut.c` & `./a.out`
 - `clang donut.c -o output` & `./output`
+## Compile with diagnostic flags
+- `clang -Wall -Wextra donut.c` & `./a.out`
 ## Compile using different C versions
 - C89 : `clang donut.c -std=c89`
 - C99 : `clang donut.c -std=c99`
