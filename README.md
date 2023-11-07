@@ -106,6 +106,18 @@ int main(void)
 - C89 : `clang donut.c -std=c89`
 - C99 : `clang donut.c -std=c99`
 - C11 : `clang donut.c -std=c11`
+## Bash
+- `touch build.sh`
+- `vim build.sh`
+```bash
+#!/bin/bash
+echo "hello"
+set -xe
+clang -Wall -Wextra -o main main.c
+```
+- `chmod +x build.sh`
+- `./build.sh`
+- `./main`
 ## Makefile
 - **TODO**
 ## Terminal commands
