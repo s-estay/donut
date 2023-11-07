@@ -108,3 +108,21 @@ int main(void)
 - C11 : `clang donut.c -std=c11`
 ## Makefile
 - **TODO**
+## Terminal commands
+- `cat` : read and display the content of one or more files
+- `cd` : change the directory you’re working in
+- `chmod` : modify file or folder permissions
+- `chown` : modify file or folder ownership
+- `cp` : copy files
+- `curl` : a tool for sending data to or from a web server
+- `defaults` : read, write, and delete software preferences
+- `echo` : return the result of a command to standard output
+- `grep` : search a file for a given pattern
+- `killall` : stop a running process or app
+- `ls` : list the contents of a directory
+- `man` : view the manual page for a command
+- `mkdir` : create a new directory or folder
+- `mv` : move one or more files or directories
+- `pwd` : see the directory you’re currently working in
+- `rm` : delete files
+- `rmdir` : delete a directory
