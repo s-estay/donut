@@ -109,19 +109,22 @@ int main(void)
 ## Bash
 - `touch build.sh`
 - `vim build.sh`
-```bash
+```zsh
 #!/bin/bash
 echo "hello"
 set -xe
 clang -Wall -Wextra -o main main.c
 ```
 - `chmod +x build.sh`
-- `./build.sh`
-- `./main`
+- `./build.sh` & `./main`
+## Markdown code block 
+- Look under *Language Name* : Aliases
+- [languages.yml](https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml)
 ## Makefile
 - **TODO**
 ## Terminal commands
 - `cat` : read and display the content of one or more files
+- `bat` : a better `cat` (not standard)
 - `cd` : change the directory you’re working in
 - `chmod` : modify file or folder permissions
 - `chown` : modify file or folder ownership
