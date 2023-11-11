@@ -141,3 +141,31 @@ clang -Wall -Wextra -o main main.c
 - `pwd` : see the directory you’re currently working in
 - `rm` : delete files
 - `rmdir` : delete a directory
+## .vimrc
+- Disable compatibility with vi which can cause unexpected issues : `set nocompatible`
+- Set shift width to 2 spaces : `set shiftwidth=2`
+- Set tab width to 2 columns : `set tabstop=2`
+## .vimrc : key mappings
+- Press space bar to type `:` (normal mode) : `nnoremap <space> :`
+- Press 1 to jump to first non-blank character of line (normal mode) : `nnoremap 1 ^`
+- Press 2 to jump to last non-blank character of line (normal mode) : `nnoremap 2 g_`
+- Auto complete brackets (insert mode)
+```vim
+inoremap ( ()<esc>ha
+inoremap { {}<esc>ha
+inoremap [ []<esc>ha
+inoremap < <><esc>ha
+inoremap ' ''<esc>ha
+inoremap " ""<esc>ha
+inoremap {<cr> {<cr><bs><bs>}<esc>ko
+```
+## .vimrc : status bar
+- Clear status line when vimrc is reloaded : `set statusline=`
+- Status line left side : `set statusline+=\ %F\ %M\ %R`
+- Use a divider to separate the left side from the right side : `set statusline+=%=`
+- Status line right side : `set statusline+=\ %l:%c` 
+- Space : `set statusline+=\`
+- Show the status on the second to last line : `set laststatus=2`
+## .vimrc : hybrid line numbers
+- `set number`
+- `set relativenumber`
