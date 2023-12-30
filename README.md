@@ -82,12 +82,21 @@
 - `:q` : quit
 - `:q!` : force quit
 - `:wq` : save & quit
+## Vim terminal
+- `term` : open terminal in an horizontal split 
+- `vert term` : open terminal in a vertical split 
+- `vert res +10` : make current window 10 lines wider
+- jump between windows : control + w + w
+- show previous executed command : control + p 
+- show next executed command : control + n 
+- enter normal mode (use hjkl keys to navigate) : control + w + shift + n
+- exit normal mode : `i`
 ## Vim visual mode
 - **TODO**
 ## Edit file
 - `vim donut.c`
 - `:wq`
-- `cat donut.c`
+- `bat donut.c`
 ## Hello World program
 ```c
 #include <stdio.h>
@@ -98,10 +107,10 @@ int main(void)
 }
 ```
 ## Compile & run a C program
-- `clang donut.c` & `./a.out`
-- `clang donut.c -o output` & `./output`
+- `clang donut.c` && `./a.out`
+- `clang donut.c -o output` && `./output`
 ## Compile with diagnostic flags
-- `clang -Wall -Wextra donut.c` & `./a.out`
+- `clang -Wall -Wextra donut.c` && `./a.out`
 ## Compile using different C versions
 - C89 : `clang donut.c -std=c89`
 - C99 : `clang donut.c -std=c99`
