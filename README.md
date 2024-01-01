@@ -40,6 +40,8 @@
 ## Amend latest commit
 - `git commit --amend --no-edit`
 - `git push -f`
+## Number of commits
+- `git shortlog -s`
 ## Vim modes
 - Normal : `ESC` : move cursor around
 - Insert : `i/a` : insert code
