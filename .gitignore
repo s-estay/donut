@@ -1,6 +1,7 @@
 # Compiled source #
 ###################
 *.out
+**/.exe
 
 # OS generated files #
 ######################
