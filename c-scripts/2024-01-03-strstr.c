@@ -1,6 +1,8 @@
 
 // https://en.cppreference.com/w/c/string/byte/strstr
 // https://en.cppreference.com/w/cpp/string/byte/strcspn
+// sublime test terminus
+// build and run : ./build.sh && ./main.out
 
 #include <stdio.h>
 #include <string.h> // strstr strcspn
