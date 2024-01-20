@@ -53,6 +53,9 @@
 - `git status`
 - `git add README.md`
 - `git push`
+## Reset local to remote
+- `git fetch origin`
+- `git reset --hard origin/main`
 ## Amend latest commit
 - `git commit --amend --no-edit`
 - `git push -f`
