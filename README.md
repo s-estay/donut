@@ -202,3 +202,9 @@ clang -Wall -Wextra -o main.out main.c
 - `brew upgrade` : upgrade all packages
 - `brew upgrade` + package name : upgrade specific package
 - `brew list --versions` + package name : package version
+## Uninstall package
+- `brew list` : display all installed packages
+- `brew deps <package-name> --tree` : display a package's dependencies
+- `brew uninstall <package-name>` : uninstall package
+- `brew autoremove` : uninstall not used dependencies
+- `brew cleanup -s` : remove all downloaded files that we don't use
