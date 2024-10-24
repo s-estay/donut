@@ -32,7 +32,8 @@
 - `mv` : move one or more files or directories
 - `pwd` : see the directory you’re currently working in
 - `rm` : delete files
-- `rmdir` : delete a directory
+- `rmdir` : delete an empty directory
+- `rm -rf` : delete a non-empty directory
 # Git
 ## Create new local repository
 - `git init`
