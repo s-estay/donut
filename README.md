@@ -34,6 +34,7 @@
 - `rm` : delete files
 - `rmdir` : delete an empty directory
 - `rm -rf` : delete a non-empty directory
+
 # Git
 ## Create new local repository
 - `git init`
@@ -73,6 +74,7 @@
 # Compiled source
 *.out
 ```
+
 # Vim
 ## Modes
 - Normal : `ESC` : move cursor around
@@ -162,39 +164,42 @@ inoremap {<cr> {<cr><bs><bs>}<esc>ko
 ## .vimrc : hybrid line numbers
 - `set number`
 - `set relativenumber`
+
 # C
-## Hello World program
+## Build and run
+- [Clang](https://clang.llvm.org)
+- Compile with diagnostics flags : `clang -Wall -Wextra main.c -o main.out`
+- Create bash script : `touch build.sh`
+```
+#!/bin/bash
+clang -Wall -Wextra main.c -o main.out
+```
+- Give writing permissions to bash script : `chmod +x build.sh`
+- Build and run using script : `./build.sh && ./main.out`
+## Compile using different C versions
+- C89 : `clang main.c -std=c89`
+- C99 : `clang main.c -std=c99`
+- C11 : `clang main.c -std=c11`
+## Hello world
 ```c
 #include <stdio.h>
-int main(void)
-{
-  printf("Hello, World!\n");
+int main(void){
+  printf("hello world\n");
   return 0;
 }
 ```
-## Compile & run
-- `clang donut.c` && `./a.out`
-- `clang donut.c -o output` && `./output`
-## Compile with diagnostic flags
-- `clang -Wall -Wextra donut.c` && `./a.out`
-## Compile using different C versions
-- C89 : `clang donut.c -std=c89`
-- C99 : `clang donut.c -std=c99`
-- C11 : `clang donut.c -std=c11`
-## Bash
-- `touch build.sh`
-- `vim build.sh`
-```zsh
-#!/bin/bash
-echo "hello"
-set -xe
-clang -Wall -Wextra -o main.out main.c
+## Add .gitignore
+- `touch .gitignore`
 ```
-- `chmod +x build.sh`
-- `./build.sh` & `./main.out`
+# ignore all output files
+**/*.out
+```
 ## Markdown code block 
 - Look under *Language Name* : Aliases
 - [languages.yml](https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml)
+## Resources
+- Knowit's [Embedded Academy](https://github.com/joelstr/knowit-embedded-academy/)
+
 # Homebrew
 - [Package manager for macOS](https://brew.sh)
 - `brew list` : installed packages
