@@ -165,6 +165,13 @@ inoremap {<cr> {<cr><bs><bs>}<esc>ko
 - `set number`
 - `set relativenumber`
 
+# Neovim
+## Install
+- Install with homebrew : `brew install neovim`
+- Start Neovim : `nvim`
+## Configure
+- Create nvim config folder : `mkdir -p ~/.config/nvim`
+
 # C
 ## Build and run
 - [Clang](https://clang.llvm.org)
