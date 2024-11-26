@@ -74,6 +74,20 @@
 # Compiled source
 *.out
 ```
+## git bash aliases
+- [Creating shortcuts in Git Bash](https://notesontech.com/git-bash-aliases/)
+- `cd`
+- `touch .bashrc`
+- this will create two files : `.bash_history` & `.bash_profile`
+- restart bash after creating a new alias
+- what does an alias mean? `type` + `<alias>`
+```
+root : cd <repo>
+st   : git -C ~/<repo> status *.h *.c *.cpp *.csv *.md *.dbc
+lg   : git -C ~/<repo> log 
+br   : git -C ~/<repo> branch
+rs   : git -C ~/<repo> fetch --all && git -C ~/<repo> reset --hard origin/main
+```
 
 # Vim
 ## Modes
